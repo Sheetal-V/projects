@@ -10,13 +10,14 @@
 <body>
     <nav class="navbar">
            <h1 class="logo">Travelling</h1>
-           <ul class="navbar">
-            <li><a href="#"></a>Home</li>
+           <ul class="links">
+            <li class="active"><a href="#"></a>Home</li>
             <li><a href="#"></a>About</li>
             <li><a href="#"></a>Tours</li>
             <li><a href="#"></a>Blog</li>
-            <li><a href="#"></a>Contacts</li>
+            <li class="btn"><a href="#"></a>Contacts</li>
         </ul>
+        <img src="./Images/hamburger-menu-line-icon-free-vector.jpg" alt="" class="menubar">
     </nav>
     
 
@@ -28,6 +29,22 @@
                 <a href="#" class="btn">Learn More</a>
             </div>
        </header>
+
+       <section>
+        <div class="title">
+            <h1>Events</h1>
+            <div class="subline"></div>
+        </div>
+       </section>
     
+
+       <script>
+            const menubutton = document.querySelector(".menubar");
+            const navBarLinks = document.querySelector('.links')
+
+            menubutton.addEventListener('click', ()=>{
+                navBarLinks.classList.toggle('mobile-menu')
+            })
+       </script>
 </body>
 </html>
